@@ -5,6 +5,7 @@ import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
+import Users from "./components/Users/Users";
 import "./index.css";
 
 const router = createBrowserRouter([
@@ -17,14 +18,18 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: "header",
-        element: <Header></Header>,
-      },
-      {
         path: "contact",
         element: <Contact />,
       },
+      {
+        path: "users",
+        element: <Users />,
+      },
     ],
+  },
+  {
+    path: "header",
+    element: <Header></Header>,
   },
 ]);
 
