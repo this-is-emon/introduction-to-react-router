@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
+import ErrorPage from "./components/ErrorPage/ErrorPage";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import PostDetail from "./components/PostDetail/PostDetail";
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "about",
